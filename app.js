@@ -1,5 +1,6 @@
 const express = require('express');
 const { registerRouter } = require('./routes/register.route');
+const { loginRouter } = require('./routes/login.route');
 const app = express();
 
 app.use(express.json());
@@ -10,5 +11,6 @@ app.get('/', (req, res) => {
 });
 
 app.use(registerRouter);
+app.use(loginRouter);
 
 module.exports = app;
