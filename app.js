@@ -1,8 +1,5 @@
 const express = require('express');
-const { registerRouter } = require('./routes/register.route');
-const { loginRouter } = require('./routes/login.route');
-const { categoryRouter } = require('./routes/category.route');
-const { courseRouter } = require('./routes/course.route');
+const { loginRouter, registerRouter, categoryRouter, courseRouter } = require('./routes');
 const app = express();
 
 app.use(express.json());
